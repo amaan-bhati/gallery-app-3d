@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import React from "react";
-import Link from "next/link";
 import { CardContainer, CardBody, CardItem } from "./CardContent";
 
 const cardData = [
@@ -17,7 +16,7 @@ const cardData = [
   {
     title: "Heading",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla ",
     imageSrc:
       "https://images.unsplash.com/photo-1599940824399-b87987ceb72a?q=80&w=2727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     link: "https://example.com/history",
@@ -130,9 +129,9 @@ const cardData = [
 
 export function Card() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0  p-2">
       {cardData.map((card, index) => (
-        <CardContainer key={index} className="inter-var">
+        <CardContainer key={index} className="inter-var mt-8 mb-0">
           <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-full h-auto rounded-xl p-4 border">
             <CardItem
               translateZ="50"
